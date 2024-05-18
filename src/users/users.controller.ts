@@ -20,10 +20,10 @@ export class UsersController {
     return this.userService.getUsers();
   }
 
-  @Get('email/:phoneNumber')
-  getUserByEmail(@Param('phNumber') phNumber: number) {
-    return this.userService.getUserByPhNumber(phNumber);
-  }
+  // @Get('email/:phoneNumber')
+  // getUserByEmail(@Param('phNumber') phNumber: number) {
+  //   return this.userService.getUserByPhNumber(phNumber);
+  // }
 
   @Post('create')
   @UsePipes(ValidationPipe)
